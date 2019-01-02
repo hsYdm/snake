@@ -2,9 +2,9 @@
 var SQUAREWIDTH = 20;
 
 // 战场宽高  横纵宽高多少个
-var XLEN = 25;
-var YLEN = 25;
-
+var XLEN = 60;
+var YLEN = 28;
+ 
 // 小方块基类
 function Square(x, y, width, height, dom) {
 	this.x = x || 0;
@@ -46,7 +46,7 @@ var Snake = tool.single(Square);
 // 游戏控制类
 var Game = tool.single();
 
-// 策略消息枚举
+// 策略消息类型
 var STRATEGYMESSAGEENUM = {
     MOVE: 'MOVE',
     EAT: 'EAT',
