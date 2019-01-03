@@ -13,11 +13,11 @@ SquareFactory.create = function(type, x, y, color) {
     }
 
     // 让所有实例都继承自SquareFactory，能获取到SquareFactory.prototype
-    if (SquareFactory.prototype[type].prototype.__proto__ != SquareFactory.prototype) {
-        SquareFactory.prototype[type].prototype = new SquareFactory();
-    }
+    // if (SquareFactory.prototype[type].prototype.__proto__ != SquareFactory.prototype) {
+    //     SquareFactory.prototype[type].prototype = new SquareFactory();
+    // }
 
-    var newSquare = new SquareFactory.prototype[type](x, y, color);
+    var newSquare = SquareFactory.prototype[type](x, y, color);
     return newSquare;
 }
 
