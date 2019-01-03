@@ -110,9 +110,6 @@ snake.strategies = {
     },
     DIE: function(snake, square, ground) {
         game.over();
-    },
-    ADD: function() {
-       game.start();
     }
 }
 

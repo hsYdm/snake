@@ -50,6 +50,5 @@ var Game = tool.single();
 var STRATEGYMESSAGEENUM = {
     MOVE: 'MOVE',
     EAT: 'EAT',
-    DIE: 'DIE',
-    ADD: 'ADD'
+    DIE: 'DIE'
 }

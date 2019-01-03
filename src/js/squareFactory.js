@@ -19,7 +19,7 @@ SquareFactory.create = function(type, x, y, color) {
 /*
  *  @desc 初始化实例各属性
  *  @param  Square( Object, 必传 ) / 方块实例
- *  @param  strategyMessage( String, 必传 ) / 当蛇触碰到该方块，蛇应该执行的动作( MOVE, DIE, EAT, ADD )
+ *  @param  strategyMessage( String, 必传 ) / 当蛇触碰到该方块，蛇应该执行的动作( MOVE, DIE, EAT )
  *  @param  color( String, 非必传 ) / 方块颜色
  *  @param  imgUrl( String, 非必传 ) / 方块背景图
 */
