@@ -13,6 +13,11 @@ game.init = function() {
 
     // 改变蛇的移动方向
     document.onkeydown = function(e) {
+        // 防止操作过快造成提前死亡
+        if(!snake.allowTurn) {
+            return
+        }
+        snake.allowTurn = false;
         if (e.which == 37 && snake.direction != DIRECTIONENUM.RIGHT ) {
             snake.direction = DIRECTIONENUM.LEFT;
         }else if (e.which == 38 && snake.direction != DIRECTIONENUM.DOWN) {

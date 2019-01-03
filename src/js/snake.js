@@ -100,8 +100,10 @@ snake.strategies = {
             ground.remove(snake.tail.x, snake.tail.y);
             ground.append(newFloor);
             // 记录新蛇尾
+            snake.tail.last.next = null;
             snake.tail = snake.tail.last;
         }
+        snake.allowTurn = true;
     },
     EAT: function(snake, square, ground) {
         this.MOVE(snake, square, ground, true);
